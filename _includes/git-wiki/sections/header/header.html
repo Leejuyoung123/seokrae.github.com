@@ -11,7 +11,9 @@
     {% if site.inc_before_header %}
     {% include {{ site.inc_before_header }} %}
     {% endif %}
-
+	
+	<img src="{{ site.logo_url }}" width="20px">
+    {{ site.title }}
     <div class="w3-hide-medium w3-hide-small">
       {% if site.logo_url %}
       {% include git-wiki/components/logo/logo.html %}
